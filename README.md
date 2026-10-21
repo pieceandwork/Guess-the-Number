@@ -10,8 +10,8 @@
 
 1. Клонируй репозиторий:
    ```bash
-   git clone https://github.com/pieceandwork/Guess_The_Number.git
-   cd Guess_The_Number
+   git clone https://github.com/pieceandwork/Guess_the_Number.git
+   cd Guess_the_Number
    ```
 2. Запусти игру:
     ```bash
@@ -20,7 +20,9 @@
 ## 📂 Структура проекта
 📦 Guess_The_Number
 
-┣ 📜 Game_Ru.py    # Основной скрипт игры
+┣ 📜 Game_Ru.py    # Основной скрипт игры (РУС)
+
+ ┣ 📜 Game_Eng.py    # Основной скрипт игры (АНГ)
 
  ┣ 📜 stats.json    # Файл с сохраненной статистикой (создается автоматически)
 
@@ -50,17 +52,19 @@ A simple Python mini-game where the computer picks a random number, and your goa
 
 1. Clone the repository:
     ```bash
-   git clone https://github.com/pieceandwork/Guess_The_Number.git
-   cd Guess_The_Number
+   git clone https://github.com/pieceandwork/Guess_the_Number.git
+   cd Guess_the_Number
    ```
 2. Run the game:
     ```bash
-   python Game_Ru.py
+   python Game_Eng.py
    ```
 ## 📂 Project Structure
 📦 Guess_The_Number
 
- ┣ 📜 Game_Ru.py    # Main game script
+ ┣ 📜 Game_Ru.py    # Main game script (RU)
+
+ ┣ 📜 Game_Eng.py    # Main game script (ENG)
 
  ┣ 📜 stats.json    # Statistics file (generated automatically)
 
