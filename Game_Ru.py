@@ -61,9 +61,14 @@ def game_option():
         f'\n\nВыбери сложность:\n\n🔴 Лёгкая (1) - {attempt[2]} попыток.\n🔴 Средняя (2) - {attempt[1]} попыток.\n🔴 Сложная (3) - {attempt[0]} попыток.\n')
 
     while True:
-        choice = int(input('Введите число (от 1️⃣ до 3️⃣): '))
+        try:
+            choice = int(input('Введите число (от 1️⃣ до 3️⃣): '))
+        except ValueError:
+            print('\n❌ Введи число!\n')
+            continue
+
         if choice <= 0 or choice > 3:
-            print('❌ Неверное значение!')
+            print('\n❌ Неверное значение!\n')
         else:
             match choice:
                 case 1:
@@ -98,7 +103,7 @@ def game_play(attempts):
         try:
             player_input = int(input())
         except ValueError:
-            print('❌ Введи число!')
+            print('\n❌ Введи число!\n')
             continue
 
         if player_input > 100 or player_input < 0:
